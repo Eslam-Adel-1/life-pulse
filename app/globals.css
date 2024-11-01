@@ -2,26 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* //=============================================================== */
+
+.button-change {
+  font-size: 10px !important;
+  padding: 12px 20px !important;
+  height: fit-content !important;
+  min-height: fit-content !important;
+  border: 1px rgb(55, 65, 81) solid;
+  color: rgb(55, 65, 81);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.after {
+  position: relative;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.after:hover::after {
+  width: 100%;
+  transition: all ease 300ms;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.after::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+  width: 0;
+  height: 1px;
+  background-color: rgb(55, 65, 81);
 }
+
+/* //=============================================================== */
+
+.react-international-phone-input {
+  width: 100%;
+}
+
+.react-international-phone-input-container {
+  border-width: 1.7px !important;
+  border-radius: 5px;
+}
+
+.react-international-phone-country-selector-button {
+  padding: 15px !important;
+}
+
+/* //=============================================================== */
+
+.form-scrollbar {
+  scrollbar-width: thin;
+}
+
+.form-scrollbar::-webkit-scrollbar {
+  width: 1px;
+}
+
+.form-scrollbar::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.form-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* //=============================================================== */
