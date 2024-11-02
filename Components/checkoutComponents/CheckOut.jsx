@@ -66,7 +66,7 @@ const CheckOut = ({ amount, appointment_id }) => {
         elements,
         clientSecret,
         confirmParams: {
-          return_url: `/successful-payment/${appointment_id}`,
+          return_url: `https://life-pulse-ochre.vercel.app/successful-payment/${appointment_id}`,
         },
       });
 
