@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import connect from "@/mongoDB/mongoConnect";
 import Appointment from "@/mongoDB/Schemas/appointment";
 
-const page = async ({ params }) => {
+const Page = async ({ params }) => {
   const { appointment_id } = await params;
   let appointmentInfo;
   //==========================================================
@@ -53,4 +53,4 @@ const page = async ({ params }) => {
   );
 };
 
-export default page;
+export default Page;

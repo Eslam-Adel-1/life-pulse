@@ -25,7 +25,7 @@ const stripePromise = loadStripe(
 
 //------------------------------------------------
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
   const [patient, setPatient] = useState(null);
   const [doctor, setDoctor] = useState(null);
   const [appointment, setAppointment] = useState(null);
@@ -81,4 +81,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;

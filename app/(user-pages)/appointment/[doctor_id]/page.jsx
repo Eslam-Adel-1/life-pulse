@@ -27,7 +27,7 @@ const daysOfWeek = [
   "Sunday",
 ];
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
   const { doctor_id } = React.use(params);
   const [showDays, setShowDays] = useState(false);
   const [typeOfAppointment, setTypeOfAppointment] = useState(1);
@@ -271,4 +271,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;

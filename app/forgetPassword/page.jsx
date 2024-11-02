@@ -2,7 +2,7 @@ import forget_password from "@/Assets/Images/Authentication_Images/forget_passwo
 import Image from "next/image";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   return (
     <main className="flex flex-col-reverse md:flex-row items-center justify-between gap-5 w-full min-h-screen md:-mt-8 px-7 my-5 py-5 md:my-0 md:py-0 md:px-0">
       <>
@@ -72,4 +72,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

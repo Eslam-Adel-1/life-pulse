@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
   const { doctor_id } = React.use(params);
   const [showSettings, setShowSettings] = useState(1);
   const [doctorData, setDoctorData] = useState(null);
@@ -108,4 +108,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;

@@ -3,7 +3,7 @@ import login_image1 from "@/Assets/Images/Authentication_Images/login-image1.png
 import Image from "next/image";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   return (
     <main className="flex items-center justify-between gap-5 w-full min-h-screen md:-mt-8 px-7 md:px-0">
       <div className="hidden md:flex flex-1 items-center justify-center">
@@ -56,4 +56,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

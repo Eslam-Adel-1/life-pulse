@@ -2,7 +2,7 @@ import forget_password_doctor from "@/Assets/Images/Authentication_Images/forget
 import Image from "next/image";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   return (
     <main className="flex flex-col-reverse md:flex-row items-center justify-between gap-5 w-full min-h-screen md:-mt-8 px-7 md:px-0">
       <>
@@ -71,4 +71,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

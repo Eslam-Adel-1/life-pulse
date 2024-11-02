@@ -4,7 +4,7 @@ import connect from "@/mongoDB/mongoConnect";
 import Image from "next/image";
 import Link from "next/link";
 
-const page = async ({ params }) => {
+const Page = async ({ params }) => {
   let errorMessage = null;
   const { doctor_id } = await params;
   let doctorInfo = [];
@@ -79,4 +79,4 @@ const page = async ({ params }) => {
   );
 };
 
-export default page;
+export default Page;

@@ -7,7 +7,7 @@ import {
 } from "@/lib/server-actions/serverActions";
 import { useRouter } from "next/navigation";
 
-const layout = ({ children }) => {
+const Layout = ({ children }) => {
   const { doctorContext, setDoctorContext, user, setUser } =
     useContext(userInfoContext);
   const router = useRouter();
@@ -59,4 +59,4 @@ const layout = ({ children }) => {
   );
 };
 
-export default layout;
+export default Layout;

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import UserLoginForm from "@/Components/Forms/UserLoginForm/UserLoginForm";
 
-const page = () => {
+const Page = () => {
   return (
     <main className="flex flex-col md:flex-row items-center justify-between gap-5 w-full min-h-screen md:-mt-8 px-7 md:px-0">
       <div className="flex flex-1 min-h-full flex-col justify-center md:py-12 lg:px-8">
@@ -54,4 +54,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

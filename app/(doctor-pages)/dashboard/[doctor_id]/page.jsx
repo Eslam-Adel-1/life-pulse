@@ -9,7 +9,7 @@ import { notFound } from "next/navigation";
 import connect from "@/mongoDB/mongoConnect";
 import GoToInfoButton from "@/Components/dashboard/GoToInfoButton";
 
-const page = async ({ params }) => {
+const Page = async ({ params }) => {
   //================================================
 
   const { doctor_id } = await params;
@@ -111,4 +111,4 @@ const page = async ({ params }) => {
   );
 };
 
-export default page;
+export default Page;

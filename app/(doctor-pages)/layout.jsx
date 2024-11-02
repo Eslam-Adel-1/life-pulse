@@ -3,7 +3,7 @@ import { useEffect, useContext } from "react";
 import { userInfoContext } from "@/lib/ReactContext/UserContext";
 import { getCurrentDoctorCookie } from "@/lib/server-actions/serverActions";
 
-const layout = ({ children }) => {
+const Layout = ({ children }) => {
   const { doctorContext, setDoctorContext } = useContext(userInfoContext);
 
   useEffect(() => {
@@ -39,4 +39,4 @@ const layout = ({ children }) => {
   );
 };
 
-export default layout;
+export default Layout;

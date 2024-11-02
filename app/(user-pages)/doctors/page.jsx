@@ -3,7 +3,7 @@ import Footer from "@/Components/Footer";
 import Doctor from "@/mongoDB/Schemas/doctorSchema";
 import connect from "@/mongoDB/mongoConnect";
 
-const page = async () => {
+const Page = async () => {
   let doctorsInfo = [];
   let errorMessage = null;
   try {
@@ -51,4 +51,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default Page;
