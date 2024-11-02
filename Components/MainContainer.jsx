@@ -1,4 +1,4 @@
-import femaleDoctor from "@/Assets/Images/FemaleDoctor.png";
+import femaleDoctor from "@/Assets/Images/femaleDoctor.png";
 import { MdOutlineSchedule } from "react-icons/md";
 import { TbCheckupList } from "react-icons/tb";
 import Image from "next/image";
