@@ -66,7 +66,7 @@ const CheckOut = ({ amount, appointment_id }) => {
         elements,
         clientSecret,
         confirmParams: {
-          return_url: `http://localhost:3000/successful-payment/${appointment_id}`,
+          return_url: `/successful-payment/${appointment_id}`,
         },
       });
 
