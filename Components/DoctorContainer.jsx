@@ -3,7 +3,7 @@ import StarsComponent from "./StarsComponent";
 
 const DoctorContainer = ({ className, image, doctorName, title, rating }) => {
   return (
-    <div className="flex flex-col lg:flex-1 w-[250px] sm:w-[300px] my-5 sm:my-12  sm:hover:flex-[1.7] transition-all duration-[400ms] group">
+    <div className="flex flex-col lg:flex-1 w-[250px] sm:w-[300px] my-5 sm:my-12  sm:hover:flex-[1.7] transition-all duration-[400ms] group text-gray-700">
       <div
         className={`${className} relative flex items-center justify-end h-56 px-5 border-2 border-red-500/80  rounded-b-[30px] rounded-t-[30px] cursor-pointer sm:group-hover:rounded-t-xl sm:group-hover:rounded-b-xl`}
       >

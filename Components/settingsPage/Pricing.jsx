@@ -45,7 +45,7 @@ const Pricing = ({ doctor_id, price }) => {
   //=============================================================
 
   return (
-    <div className="col-span-8 overflow-hidden rounded-xl sm:bg-gray-50 sm:px-8 sm:shadow pb-10 pt-5">
+    <div className="col-span-8 overflow-hidden rounded-xl sm:bg-gray-50 sm:px-8 sm:shadow pb-10 pt-5 text-gray-600">
       <ToastContainer />
       <p className="text-center my-5">التسعيرة</p>
       <form onSubmit={(e) => handleSubmit(e)}>
@@ -67,7 +67,7 @@ const Pricing = ({ doctor_id, price }) => {
             <input
               type="number"
               id="number-input"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
               placeholder="200"
               onChange={(e) => setCheckUpPrice(e.target.value)}
               value={checkUpPrice ?? ""}
@@ -79,7 +79,7 @@ const Pricing = ({ doctor_id, price }) => {
             <input
               type="number"
               id="number-input"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
               placeholder="100"
               onChange={(e) => setConsultationPrice(e.target.value)}
               value={consultationPrice ?? ""}

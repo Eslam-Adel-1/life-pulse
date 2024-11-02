@@ -51,7 +51,9 @@ const Account = ({ doctor_id }) => {
     <div className="col-span-8 overflow-hidden rounded-xl sm:bg-gray-50 sm:px-8 sm:shadow">
       <ToastContainer />
       <hr className="mt-4 mb-8" />
-      <p className="py-2 text-xl font-semibold text-end">البريد الالكتروني</p>
+      <p className="py-2 text-xl font-semibold text-end text-gray-600">
+        البريد الالكتروني
+      </p>
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
         <button className="inline-flex text-sm font-semibold text-blue-600 underline decoration-2">
           تغيير
@@ -61,7 +63,9 @@ const Account = ({ doctor_id }) => {
         </p>
       </div>
       <hr className="mt-4 mb-8" />
-      <p className="py-2 text-xl font-semibold text-end">كلمة السر</p>
+      <p className="py-2 text-xl font-semibold text-end text-gray-600">
+        كلمة السر
+      </p>
       <div className="flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +115,9 @@ const Account = ({ doctor_id }) => {
       </div>
 
       <div className="my-10 border-t">
-        <p className="py-2 text-xl font-semibold text-end">حذف حساب</p>
+        <p className="py-2 text-xl font-semibold text-end text-gray-600">
+          حذف حساب
+        </p>
         <div className="flex justify-end my-4">
           <p className="inline-flex items-center rounded-full bg-rose-100 px-4 py-1 text-rose-600 justify-self-end">
             لا يمكن التراجع عن هذا الفعل
@@ -129,7 +135,7 @@ const Account = ({ doctor_id }) => {
             </svg>
           </p>
         </div>
-        <p className="mt-2 text-end">
+        <p className="mt-2 text-end text-gray-600">
           تحذير: سيتم حذف حسابك نهائيا ولا يمكن التراجع عن هذا الفعل
         </p>
         <div className="flex justify-end my-4">

@@ -36,7 +36,7 @@ const Page = async ({ params }) => {
       !doctorInfo?.profileImage
     ) {
       return (
-        <div className="flex items-center justify-center h-screen flex-col gap-7">
+        <div className="flex items-center justify-center h-screen flex-col gap-7 text-gray-600">
           <p> المعلومات غير مكتملة قم بإستكمال معلوماتك للدخول الى حسابك</p>
           <GoToInfoButton doctor_id={doctor_id} />
         </div>

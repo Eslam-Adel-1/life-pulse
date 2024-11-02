@@ -20,7 +20,7 @@ const ScheduleTable = async ({ doctor_id }) => {
     patientInfoArray = await Promise.all(patientInfo);
 
     if (!doctorSchedule || doctorSchedule?.length === 0) {
-      error = "لا يوجد مواعيد ";
+      error = "لا يوجد مواعيد لهذا الطبيب";
     }
   } catch (err) {
     console.error(err.message);

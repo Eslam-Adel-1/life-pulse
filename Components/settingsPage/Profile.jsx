@@ -8,7 +8,9 @@ const Profile = ({ doctorData }) => {
   return (
     <div className="col-span-8 overflow-hidden rounded-xl sm:bg-gray-50 sm:px-8 sm:shadow">
       <hr className="mt-4 mb-8" />
-      <p className="py-2 text-xl font-semibold text-end">: الاسم الكامل</p>
+      <p className="py-2 text-xl font-semibold text-end text-gray-600">
+        : الاسم الكامل
+      </p>
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
         <button className="inline-flex text-sm font-semibold text-blue-600 underline decoration-2">
           تغيير
@@ -21,7 +23,9 @@ const Profile = ({ doctorData }) => {
         </p>
       </div>
       <hr className="mt-4 mb-8" />
-      <p className="py-2 text-xl font-semibold text-end">صورة الملف الشخصي</p>
+      <p className="py-2 text-xl font-semibold text-end text-gray-600">
+        صورة الملف الشخصي
+      </p>
       <div>
         <div className="h-36 w-36 flex items-center justify-center">
           <Image
@@ -45,7 +49,9 @@ const Profile = ({ doctorData }) => {
       </div>
 
       <div className="my-10 border-t">
-        <p className="py-2 text-xl font-semibold text-end">رقم الهاتف</p>
+        <p className="py-2 text-xl font-semibold text-end text-gray-600">
+          رقم الهاتف
+        </p>
         <div className="flex items-center justify-between">
           <PhoneInput
             defaultCountry="eg"
@@ -53,8 +59,8 @@ const Profile = ({ doctorData }) => {
             placeholder="1515151515151515"
           />
           <div>
-            <p className="flex-[0.25] text-center">رقم هاتفك</p>
-            <p>{doctorData?.phone_number}</p>
+            <p className="flex-[0.25] text-center text-gray-600">رقم هاتفك</p>
+            <p className="text-gray-600">{doctorData?.phone_number}</p>
           </div>
         </div>
       </div>

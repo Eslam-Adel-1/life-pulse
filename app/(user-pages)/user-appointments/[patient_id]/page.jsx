@@ -3,6 +3,7 @@ import Appointment from "@/mongoDB/Schemas/appointment";
 import Doctor from "@/mongoDB/Schemas/doctorSchema";
 import rotateYourPhone from "@/Assets/Images/rotateYourPhone.gif";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 //==========================================
 const ScheduleTable = async ({ params }) => {
@@ -26,7 +27,7 @@ const ScheduleTable = async ({ params }) => {
       error = "لا يوجد مواعيد ";
     }
   } catch (err) {
-    console.error(err.message);
+    notFound();
   }
 
   //============================================

@@ -9,7 +9,7 @@ const RatingModel = ({ profileImage, id }) => {
   return (
     <div>
       <button
-        className="border border-gray-200 shadow-md text-[12px] p-2 rounded-lg"
+        className="border border-gray-400 text-gray-600  text-[12px] p-2 rounded-lg"
         onClick={() => setShowModel((prev) => !prev)}
       >
         قيم الدكتور

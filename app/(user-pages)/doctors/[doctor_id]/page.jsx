@@ -13,6 +13,10 @@ const Page = async ({ params }) => {
     doctorInfo = await Doctor.findOne({
       _id: JSON.parse(JSON.stringify(doctor_id)),
     });
+    if (!doctorInfo) {
+      errorMessage =
+        "حدث خطأ ما رجاءا قم بتحديث الصفحة او عد مجددا في وقت لاحق";
+    }
   } catch (err) {
     errorMessage = "حدث خطأ ما رجاءا قم بتحديث الصفحة او عد مجددا في وقت لاحق";
   }
@@ -28,7 +32,7 @@ const Page = async ({ params }) => {
           <div className="p-16">
             <div className="p-8 bg-white shadow-lg rounded-xl border-[1.5px]">
               <div className="">
-                <div className="flex items-center justify-center gap-10">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-10 ">
                   <div className="w-36 h-36 bg-indigo-100 overflow-hidden rounded-full shadow-2xl  flex items-center justify-center text-indigo-500">
                     <Image
                       src={
@@ -42,8 +46,8 @@ const Page = async ({ params }) => {
                     />
                   </div>
                   <div className="flex flex-col items-center justify-end">
-                    <h1 className="text-4xl font-medium text-gray-700">{`${doctorInfo.first_name} ${doctorInfo.last_name}`}</h1>
-                    <p className="font-light text-gray-600 mt-3 text-sm">
+                    <h1 className="text-4xl font-medium text-gray-700 text-center">{`${doctorInfo.first_name} ${doctorInfo.last_name}`}</h1>
+                    <p className="font-light text-gray-600 mt-3 text-sm text-center">
                       {doctorInfo?.university || "هذا الحقل فارغ"}
                     </p>
                   </div>
@@ -51,16 +55,16 @@ const Page = async ({ params }) => {
               </div>
 
               <div className="mt-10 text-center border-b pb-12">
-                <p className="mt-8 text-gray-500">
+                <p className="mt-8 text-gray-500 text-center">
                   {doctorInfo?.clinic || "هذا الحقل فارغ"}
                 </p>
-                <p className="mt-2 text-gray-500">
+                <p className="mt-2 text-gray-500 text-center">
                   {doctorInfo?.university || "هذا الحقل فارغ"}
                 </p>
               </div>
 
               <div className="mt-12 flex flex-col justify-center">
-                <p className="text-gray-600 text-center font-light lg:px-16">
+                <p className="text-gray-600 text-center font-light lg:px-16 ">
                   {doctorInfo?.bio || "هذا الحقل فارغ"}
                 </p>
                 <Link

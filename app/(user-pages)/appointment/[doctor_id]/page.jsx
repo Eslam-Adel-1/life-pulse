@@ -135,7 +135,7 @@ const Page = ({ params }) => {
                     />
                     <span className="absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white peer-checked:border-red-400/70"></span>
                     <label
-                      className="flex h-full cursor-pointer flex-col rounded-lg p-4 shadow-lg shadow-slate-100 peer-checked:bg-red-500/80 peer-checked:text-white"
+                      className="flex h-full text-gray-600 cursor-pointer flex-col rounded-lg p-4 shadow-lg shadow-slate-100 peer-checked:bg-red-500/80 peer-checked:text-white"
                       htmlFor="radio_1"
                     >
                       <span className="mt-2- font-medium">استشارة</span>
@@ -161,7 +161,7 @@ const Page = ({ params }) => {
                     <span className="absolute right-4 top-1/2 box-content block h-3 w-3 -translate-y-1/2 rounded-full border-8 border-gray-300 bg-white peer-checked:border-red-400/70"></span>
 
                     <label
-                      className="flex h-full cursor-pointer flex-col rounded-lg p-4 shadow-lg shadow-gray-200 peer-checked:bg-red-500/80 peer-checked:text-white"
+                      className="flex h-full cursor-pointer text-gray-600 flex-col rounded-lg p-4 shadow-lg shadow-gray-200 peer-checked:bg-red-500/80 peer-checked:text-white"
                       htmlFor="radio_2"
                     >
                       <span className="mt-2 font-medium">كشف </span>
@@ -182,11 +182,11 @@ const Page = ({ params }) => {
                   <input
                     onClick={() => setShowDays((prev) => !prev)}
                     type="text"
-                    className="datepicker-input block text-end w-full rounded-lg border border-red-300 bg-red-50 p-2.5 pr-10 text-red-800 outline-none ring-opacity-30 placeholder:text-gray-500 focus:ring focus:ring-red-300 sm:text-sm"
+                    className=" block text-end w-full rounded-lg border border-red-300 bg-red-50 p-2.5 pr-10 text-red-800 outline-none ring-opacity-30 placeholder:text-gray-500 focus:ring focus:ring-red-300 sm:text-sm"
                     placeholder={daysOfWeekArabic(day)}
                   />
                   {showDays && (
-                    <div className="absolute top-12 border shadow-lg right-0 left-0 bg-white p-4 rounded-lg z-50">
+                    <div className="absolute text-gray-600 top-12 border shadow-lg right-0 left-0 bg-white p-4 rounded-lg z-50">
                       {daysOfWeek.map((day, index) => (
                         <p
                           className="cursor-pointer mt-2 text-end hover:text-blue-500"

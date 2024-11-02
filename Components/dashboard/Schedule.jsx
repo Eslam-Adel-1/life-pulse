@@ -92,7 +92,9 @@ const Schedule = ({ setShowModal, doctor_id }) => {
           className="text-2xl absolute top-5 right-6 hover:bg-slate-300 hover:rounded-full cursor-pointer"
           onClick={() => setShowModal((prev) => !prev)}
         />
-        <p className="text-end w-full">قم بإضافة او تعديل مواعيد لعيادتك</p>
+        <p className="text-end w-full text-gray-600">
+          قم بإضافة او تعديل مواعيد لعيادتك
+        </p>
 
         {/* //===================================== */}
 
@@ -101,7 +103,7 @@ const Schedule = ({ setShowModal, doctor_id }) => {
           {daysOfWeek.map((day, index) => (
             <div
               className={`border p-2 rounded-lg ${
-                selectedDay === day && "text-blue-700"
+                selectedDay === day ? "text-blue-700" : "text-gray-600"
               }`}
               onClick={() => setSelectedDay(day)}
               key={index}
@@ -139,7 +141,7 @@ const Schedule = ({ setShowModal, doctor_id }) => {
                       )
                     }
                   />
-                  <span className="peer-checked:text-red-600">
+                  <span className="peer-checked:text-red-600 text-gray-600">
                     {renderTimeWithAmOrPm(index)}
                   </span>
                 </div>

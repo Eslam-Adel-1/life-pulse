@@ -4,9 +4,9 @@ import lifePulse from "@/Assets/Images/lifePulse.png";
 
 const Footer = () => {
   return (
-    <footer className="w-full mt-10 py-10 border-t-[1.5px] border-gray-300 rounded-xl">
+    <footer className="mt-10 py-10 border-t-[1.5px] border-gray-300 rounded-xl">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto flex flex-col items-center gap-7">
+        <div className="max-w-3xl mx-auto flex flex-col items-center gap-7 text-gray-700">
           <Link href="/" className="flex items-center justify-center">
             <div className="flex items-center gap-4 cursor-pointer">
               <p className="text-red-400 font-semibold text-xl">نبض الحياة</p>

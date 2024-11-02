@@ -17,7 +17,7 @@ export default function Home() {
         <GridContainer>
           <MainContainer className="bg-red-500/80 lg:h-80 md:h-full lg:col-span-3 md:col-span-2 md:row-span-3 md:py-3 pt-3 " />
           <SquareContainer
-            className="border-2 border-red-500/80"
+            className="border-2 border-red-500/80 text-gray-700"
             image={medicalPhone}
             title="احجز الان"
             text="يمكنك الحجز الان من راحة بيتك ومن هاتفك"
@@ -29,7 +29,7 @@ export default function Home() {
             text="ادوية وبدائل فعالة وينصج بها من قبل الاخبراء"
           />
           <SquareContainer
-            className="border-2 border-red-500/80"
+            className="border-2 border-red-500/80 text-gray-700"
             image={handsHeart}
             title="رعاية على مدار اليوم"
             text="خبراء واطباء متاحين على مدار اليوم و الاسبوع"
@@ -37,7 +37,7 @@ export default function Home() {
         </GridContainer>
       </section>
       <section className="flex flex-col items-center my-28 gap-20">
-        <h1 className="text-2xl mb-10 text-center leading-10">
+        <h1 className="text-gray-700 text-2xl mb-10 text-center leading-10">
           افضل الاطباء تقييما على نبض الحياة
         </h1>
         <div className="md:flex md:flex-row flex flex-col  justify-center items-center w-full lg:gap-10 md:gap-5 gap-24 ">

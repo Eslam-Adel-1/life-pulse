@@ -143,7 +143,7 @@ const RatingFunctionalComp = ({ setShowModel, id }) => {
         </div>
         <button
           type="submit"
-          className="py-2.5 px-5 ms-3 text-sm font-medium text-gray-500 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 "
+          className="py-2.5 px-5 mt-3 ms-3 text-sm font-medium text-gray-500 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 "
         >
           ارسل التقييم
         </button>

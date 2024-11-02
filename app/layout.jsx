@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" className={lemonada.className}>
-      <body className="antialiased lg:px-20 bg-white xl:px-52 md:px-12 px-5 sm:px-10 ">
+      <body className="antialiased lg:px-20 bg-white xl:px-52 md:px-12 px-5 sm:px-10 min-h-screen">
         <UserContextProvider>
           <Navbar />
           {children}

@@ -37,7 +37,7 @@ const DoctorCard = ({
           <h5 className="mt-3 mb-1 text-[14px] font-medium text-gray-900 ">
             {`${first_name} ${last_name}`}
           </h5>
-          <span className="text-[12px] text-gray-500 dark:text-gray-400 mb-2">
+          <span className="text-[12px] text-gray-600 dark:text-gray-600 mb-2">
             {speciality}
           </span>
           <StarsComponent rating={average} />

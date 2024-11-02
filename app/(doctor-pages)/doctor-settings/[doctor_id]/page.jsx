@@ -60,7 +60,7 @@ const Page = ({ params }) => {
       ) : (
         <>
           <div className="mx-4 min-h-screen max-w-screen-xl sm:mx-8 xl:mx-auto">
-            <h1 className="border-b py-6 text-2xl text-end font-semibold">
+            <h1 className="border-b py-6 text-2xl text-end font-semibold text-gray-600">
               الاعدادات
             </h1>
             <div className="grid grid-cols-8 pt-3 sm:grid-cols-10">
@@ -72,7 +72,7 @@ const Page = ({ params }) => {
                 <Pricing doctor_id={doctor_id} price={doctorData?.price} />
               )}
 
-              <div className="col-span-2 hidden sm:block">
+              <div className="col-span-2 hidden sm:block text-gray-600">
                 <ul>
                   <li
                     className={`${

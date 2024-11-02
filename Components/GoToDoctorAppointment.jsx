@@ -5,7 +5,7 @@ const GoToDoctorAppointment = () => {
   const router = useRouter();
   return (
     <main className="flex flex-col justify-center items-center gap-6 min-h-screen">
-      <p className="text-center">
+      <p className="text-center text-gray-700">
         لم يكمل هذا الطبيب الاجرائات اللازمة لحجز المواعيد بعد
       </p>
       <button
