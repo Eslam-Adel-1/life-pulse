@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
         if (!doctorContext) {
           const doctorCookie = await getCurrentDoctorCookie();
           if (doctorCookie) {
-            setDoctorContext(userCookie?.userData);
+            setDoctorContext(doctorCookie?.doctorData);
           }
         }
         if (!user) {
