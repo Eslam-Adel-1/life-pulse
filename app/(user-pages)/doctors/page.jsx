@@ -3,6 +3,8 @@ import Footer from "@/Components/Footer";
 import Doctor from "@/mongoDB/Schemas/doctorSchema";
 import connect from "@/mongoDB/mongoConnect";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 const Page = async () => {
   let doctorsInfo = [];
   let errorMessage = null;
