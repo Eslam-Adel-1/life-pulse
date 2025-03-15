@@ -8,6 +8,11 @@ const Page = () => {
     <main className="flex items-center justify-between gap-5 w-full min-h-screen md:-mt-8 px-7 md:px-0">
       <div className="flex flex-1 min-h-full flex-col justify-center md:py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+          <div className="font-mono font-bold text-gray-500 mt-5 mb-8 text-sm md:my-0 md:text-base ">
+            <p>* Demo Account *</p>
+            <p>E-mail : Eslam334@gmail.com</p>
+            <p>Password : Qwe123@www</p>
+          </div>
           <h2 className="md:mt-10 text-end text-2xl font-bold leading-9 tracking-tight text-gray-700">
             تسجيل دخول الى حسابك
           </h2>
