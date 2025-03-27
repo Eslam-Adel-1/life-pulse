@@ -1,21 +1,24 @@
+// Components Imports
 import GridContainer from "@/Components/GridContainer";
 import MainContainer from "@/Components/MainContainer";
 import DoctorContainer from "@/Components/DoctorContainer";
 import SquareContainer from "@/Components/SquareContainer";
+import Footer from "@/Components/Footer";
+
+// Assets Imports
 import capsule from "@/Assets/Images/capsule.png";
 import handsHeart from "@/Assets/Images/handsHeart.png";
 import medicalPhone from "@/Assets/Images/phoneMedical.png";
 import doctor1 from "@/Assets/Images/doctor1.png";
 import doctor2 from "@/Assets/Images/doctor2.png";
 import doctor3 from "@/Assets/Images/doctor3.png";
-import Footer from "@/Components/Footer";
 
 export default function Home() {
   return (
     <main>
       <section>
         <GridContainer>
-          <MainContainer className="bg-red-500/80 lg:h-80 md:h-full lg:col-span-3 md:col-span-2 md:row-span-3 md:py-3 pt-3 " />
+          <MainContainer className="bg-red-500/80 2xl:h-[24rem] lg:h-80 md:h-full lg:col-span-3 md:col-span-2 md:row-span-3 md:py-3 pt-3 " />
           <SquareContainer
             className="border-2 border-red-500/80 text-gray-700"
             image={medicalPhone}

@@ -6,13 +6,13 @@ import Link from "next/link";
 const Page = () => {
   return (
     <main className="flex items-center justify-between gap-5 w-full min-h-screen md:-mt-8 px-7 md:px-0">
-      <div className="hidden md:flex md:flex-1 items-center justify-center bg-white bg-blend-screen">
+      <div className="hidden md:flex md:flex-1 items-center justify-center">
         <Image
           src={doctorDiscuss}
           alt="login-image"
           width={370}
           height={370}
-          className=""
+          className="xl:h-[60%] xl:w-[60%] min-w-[330px] min-h-[330px]  object-contain"
         />
       </div>
       {/* //==================================================== */}
@@ -23,7 +23,7 @@ const Page = () => {
           </h2>
         </div>
 
-        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <div className="mt-10 sm:mx-auto sm:w-full xl:w-[85%]">
           <DoctorRegisterForm />
 
           <p className="mt-4 text-center text-sm text-gray-500">

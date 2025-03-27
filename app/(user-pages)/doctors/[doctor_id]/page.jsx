@@ -22,14 +22,14 @@ const Page = async ({ params }) => {
   }
 
   return (
-    <main className="min-h-screen -m-8">
+    <main className="min-h-screen max-w-[1000px] lg:mx-auto">
       {errorMessage ? (
         <div className="flex items-center justify-center p-11 h-screen">
           <p>{errorMessage}</p>
         </div>
       ) : (
         <>
-          <div className="p-16">
+          <div className="md:p-16">
             <div className="p-8 bg-white shadow-lg rounded-xl border-[1.5px]">
               <div className="">
                 <div className="flex flex-col md:flex-row items-center justify-center gap-10 ">

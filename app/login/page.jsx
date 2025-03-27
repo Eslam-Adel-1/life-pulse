@@ -6,7 +6,7 @@ import UserLoginForm from "@/Components/Forms/UserLoginForm/UserLoginForm";
 const Page = () => {
   return (
     <main className="flex flex-col md:flex-row items-center justify-between gap-5 w-full min-h-screen md:-mt-8 px-7 md:px-0">
-      <div className="flex flex-1 min-h-full flex-col justify-center md:py-12 lg:px-8">
+      <div className="flex flex-1 min-h-full flex-col justify-center md:py-12 lg:px-8 ">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <div className="font-mono font-bold text-gray-500 mt-5 mb-8 text-sm md:my-0 md:text-base ">
             <p>* Demo Account *</p>
@@ -18,7 +18,7 @@ const Page = () => {
           </h2>
         </div>
 
-        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <div className="mt-10 sm:mx-auto sm:w-full xl:w-[85%]">
           <UserLoginForm />
 
           <p className="mt-4 text-center text-sm text-gray-500">
@@ -52,7 +52,7 @@ const Page = () => {
           alt="login-image"
           width={310}
           height={310}
-          className=""
+          className="xl:h-[60%] xl:w-[60%] min-w-[330px] min-h-[330px]  object-contain"
         />
       </div>
     </main>

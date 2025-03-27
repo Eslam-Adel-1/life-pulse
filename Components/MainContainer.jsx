@@ -8,7 +8,7 @@ const MainContainer = ({ className }) => {
     <div className={`relative rounded-lg ${className}`}>
       {/* //================================================ */}
       <div className="flex items-center justify-center">
-        <div className="lg:text-[70px] font-semibold text-white/90 md:text-[55px] sm:text-[55px] text-[40px] md:mr-0">
+        <div className="lg:text-[70px] 2xl:text-[90px] font-semibold text-white/90 md:text-[55px] sm:text-[55px] text-[40px] md:mr-0">
           <span className="">نبض </span>
           <span className="lg:mr-5">الحياة</span>
         </div>
@@ -20,14 +20,14 @@ const MainContainer = ({ className }) => {
 
         <div className="flex flex-col items-end px-7 sm:px-10 md:px-0">
           <div className="flex items-center gap-3 ml-5">
-            <button className="text-white font-semibold text-lg">
+            <button className="text-white font-semibold text-lg 2xl:text-2xl">
               استشارات فورية
             </button>
             <div className="rounded-full p-1 bg-white">
               <TbCheckupList className="text-2xl text-red-500/80" />
             </div>
           </div>
-          <p className="lg:text-[11px] md:text-[13px] text-end lg:w-[200px] md:w-[250px] leading-7 text-white mr-5 mt-3">
+          <p className="lg:text-[11px] md:text-[13px] 2xl:text-[1rem] text-end lg:w-[200px] md:w-[250px] 2xl:w-[300px] leading-7 text-white mr-5 mt-3">
             استشارات فورية للحالات الطارئة في خلال خمس دقائق مع خبراء في مجال
             الطب
           </p>
@@ -35,14 +35,14 @@ const MainContainer = ({ className }) => {
         {/* //============================================ */}
         <div className="flex flex-col items-end px-7 sm:px-10 md:px-0">
           <div className="flex items-center gap-3">
-            <button className="text-white font-semibold text-lg">
+            <button className="text-white font-semibold text-lg 2xl:text-2xl">
               احجز الان
             </button>
             <div className="rounded-full p-1 bg-white">
               <MdOutlineSchedule className="text-2xl text-red-500/80" />
             </div>
           </div>
-          <p className="lg:text-[11px] md:text-[13px] text-end lg:w-[200px] md:w-[250px] leading-7 text-white mr-5 mt-3">
+          <p className="lg:text-[11px] md:text-[13px] 2xl:text-[1rem] text-end lg:w-[200px] md:w-[250px] 2xl:w-[300px] leading-7 text-white mr-5 mt-3">
             احجز الان مع طبيب او استشاري وسيتم الرد عليك وتأكيد الحجز خلال
             ساعيتن على اقصلى تقدير
           </p>
@@ -53,7 +53,7 @@ const MainContainer = ({ className }) => {
           alt="female-doctor"
           width={300}
           height={300}
-          className="md:absolute bottom-0 lg:left-[50%] lg:translate-x-[-50%] md:left-[50%] md:translate-x-[-50%]  lg:w-[300px] lg:h-[300px] md:w-[330px] md:h-[330px] "
+          className="md:absolute bottom-0 lg:left-[50%] lg:translate-x-[-50%] md:left-[50%] md:translate-x-[-50%]  lg:w-[300px] lg:h-[300px] md:w-[330px] md:h-[330px] 2xl:w-[350px] 2xl:h-[350px] object-contain"
         />
       </div>
     </div>

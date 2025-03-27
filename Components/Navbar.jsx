@@ -14,8 +14,8 @@ const Navbar = () => {
     <div className="flex items-center justify-between py-4  px-4 md:px-0 z-50">
       <NavbarButton doctor={doctorContext} user={user} />
       {user && (
-        <ul className="hidden lg:flex items-center gap-9 text-[13px]">
-          <li className="cursor-pointer after text-gray-800 text-end">
+        <ul className="hidden lg:flex items-center gap-9 text-sm 2xl:text-lg">
+          <li className="cursor-pointer after text-gray-800 text-end ">
             <Link href="">خدمات </Link>
           </li>
           <li className="cursor-pointer after text-gray-800 text-end">
@@ -31,8 +31,13 @@ const Navbar = () => {
       )}
 
       <div className="flex items-center gap-2 cursor-pointer">
-        <p className="text-red-400 font-semibold">نبض الحياة</p>
-        <Image src={lifePulse} alt="نبض الحياة" width={40} />
+        <p className="text-red-400 font-semibold xl:text-xl">نبض الحياة</p>
+        <Image
+          src={lifePulse}
+          alt="نبض الحياة"
+          width={40}
+          className="xl:w-[60px]"
+        />
       </div>
     </div>
   );

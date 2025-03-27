@@ -108,20 +108,20 @@ const Page = ({ params }) => {
         <main className="min-h-screen py-7">
           <ToastContainer className="text-end" />
           <h2 className="text-center text-gray-700">اكمل حجزك مع الطبيب</h2>
-          <div className="my-7 flex items-center justify-center">
+          <div className="my-7 flex items-center justify-center w-full">
             <Image
               src={Booking}
               alt="doctor-appointment"
-              className="hidden md:block md:w-[350px] "
+              className="hidden md:block md:w-[350px] min-w-[350px] 2xl:w-[30%]"
             />
-            <div className="px-6 pb-20 gap-6 ">
+            <div className="px-6 pb-20 gap-6 2xl:w-[40%]">
               <div className="flex flex-col items-end justify-between ">
                 <p className="text-md font-bold text-gray-500 text-end">
                   اختر نوع الزيارة
                 </p>
                 <div className="mt-4 flex flex-row items-center gap-5 justify-end ">
                   <div
-                    className="relative w-[150px] lg:w-[200px]"
+                    className="relative w-[140px] lg:w-[200px] 2xl:[300px]"
                     onClick={() => {
                       setTypeOfAppointment(1);
                       setAppointmentPrice(docPrice?.consultation_price);
@@ -146,7 +146,7 @@ const Page = ({ params }) => {
                     </label>
                   </div>
                   <div
-                    className="relative w-[150px] lg:w-[200px] "
+                    className="relative w-[140px] lg:w-[200px]  2xl:[400px]"
                     onClick={() => {
                       setTypeOfAppointment(2);
                       setAppointmentPrice(docPrice?.check_up_price);

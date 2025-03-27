@@ -31,10 +31,10 @@ const ProfileComponent = () => {
           onClick={() => setShowMenu((prev) => !prev)}
           data-dropdown-toggle="userDropdown"
           data-dropdown-placement="bottom-start"
-          className="w-11 h-11 border-2 border-red-500/60 border-dashed rounded-full p-[1.5px] flex items-center justify-center"
+          className="w-11 h-11 border-2 border-red-500/60 border-dashed rounded-full p-[1.5px] flex items-center justify-center xl:w-16 xl:h-16"
         >
-          {doctorContext?.profileImage ? (
-            <div className="w-9 h-9 rounded-full overflow-hidden">
+          <div className="w-9 h-9 rounded-full overflow-hidden xl:w-14 xl:h-14">
+            {doctorContext?.profileImage ? (
               <Image
                 src={doctorContext?.profileImage}
                 alt="profile-image"
@@ -42,9 +42,7 @@ const ProfileComponent = () => {
                 height={500}
                 className="h-full object-fill"
               />
-            </div>
-          ) : (
-            <div className="w-9 h-9 rounded-full overflow-hidden">
+            ) : (
               <Image
                 src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
                 alt="profile-image"
@@ -52,17 +50,17 @@ const ProfileComponent = () => {
                 height={500}
                 className="h-full object-fill"
               />
-            </div>
-          )}
+            )}
+          </div>
         </button>
       </div>
       {showMenu && (
         <div
           id="userDropdown"
-          className="z-[100] absolute top-[110%] bg-white divide-y divide-gray-200 rounded-lg shadow w-44 border border-red-300"
+          className="z-[100] absolute top-[110%] bg-white divide-y divide-gray-200 rounded-lg shadow w-44 border border-red-300 xl:w-[20rem]"
         >
-          <div className="px-4 py-3 text-sm text-gray-900">
-            <p className="text-[12px] text-end">
+          <div className="px-4 py-3 text-sm text-gray-900 xl:text-[1rem]">
+            <p className=" text-end">
               {" "}
               {user
                 ? `${user?.first_name} ${user?.last_name}`
@@ -70,7 +68,7 @@ const ProfileComponent = () => {
                 ? `${doctorContext?.first_name} ${doctorContext?.last_name}`
                 : "something went wrong"}
             </p>
-            <div className="text-[11px] font-semibold truncate">
+            <div className="text-[11px] font-semibold truncate xl:text-[1rem]">
               {user
                 ? user?.email
                 : doctorContext
@@ -79,7 +77,7 @@ const ProfileComponent = () => {
             </div>
           </div>
           <ul
-            className="py-2 text-sm text-gray-700 "
+            className="py-2 text-sm text-gray-700 xl:text-[1rem]"
             aria-labelledby="avatarButton"
           >
             {doctorContext ? (
@@ -88,7 +86,7 @@ const ProfileComponent = () => {
                   href={`/dashboard/${JSON.parse(
                     JSON.stringify(doctorContext._id)
                   )}`}
-                  className="block text-[12px] px-4 py-2 hover:bg-gray-100  text-end"
+                  className="block px-4 py-2 hover:bg-gray-100  text-end"
                 >
                   الجدول
                 </Link>
@@ -99,7 +97,7 @@ const ProfileComponent = () => {
                   href={`/user-appointments/${JSON.parse(
                     JSON.stringify(user?._id)
                   )}`}
-                  className="block text-[12px] px-4 py-2 hover:bg-gray-100  text-end"
+                  className="block px-4 py-2 hover:bg-gray-100  text-end"
                 >
                   مواعيدك
                 </Link>
@@ -115,7 +113,7 @@ const ProfileComponent = () => {
                       )}`
                     : `/user-settings/${JSON.parse(JSON.stringify(user._id))}`
                 }
-                className="block text-[12px] px-4 py-2 hover:bg-gray-100  text-end"
+                className="block px-4 py-2 hover:bg-gray-100  text-end"
               >
                 الاعدادات
               </Link>
@@ -125,7 +123,7 @@ const ProfileComponent = () => {
                 <li className="block lg:hidden">
                   <Link
                     href="/"
-                    className="block text-[12px] px-4 py-2 hover:bg-gray-100  text-end"
+                    className="block px-4 py-2 hover:bg-gray-100  text-end"
                   >
                     الرئيسية
                   </Link>
@@ -133,7 +131,7 @@ const ProfileComponent = () => {
                 <li className="block lg:hidden">
                   <Link
                     href="/doctors"
-                    className="block text-[12px] px-4 py-2 hover:bg-gray-100  text-end"
+                    className="block px-4 py-2 hover:bg-gray-100  text-end"
                   >
                     الاطباء
                   </Link>
@@ -141,9 +139,9 @@ const ProfileComponent = () => {
               </>
             )}
           </ul>
-          <div className="py-1 flex items-center justify-end">
+          <div className="py-1 flex items-center justify-end xl:text-[1rem]">
             <button
-              className="block px-4 py-2 text-[11px] text-gray-700 hover:bg-gray-100 w-full"
+              className="block px-4 py-2 text-gray-700 hover:bg-gray-100 w-full"
               onClick={() => handleLogOut()}
             >
               تسجيل الخروج

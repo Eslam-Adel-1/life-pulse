@@ -42,7 +42,7 @@ const Page = async ({ params }) => {
           <div className="py-10 text-center">
             <Link
               href="/"
-              className="px-12 bg-green-600 hover:bg-green-500 text-white font-semibold py-3 text-sm rounded-xl"
+              className="px-5 sm:px-12 bg-green-600 hover:bg-green-500 text-white font-semibold py-3 text-[13px] sm:text-sm rounded-xl"
             >
               العودة للقائمة الرئيسية
             </Link>
