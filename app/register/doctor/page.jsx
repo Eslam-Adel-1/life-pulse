@@ -12,13 +12,13 @@ const Page = () => {
           alt="login-image"
           width={370}
           height={370}
-          className="xl:h-[60%] xl:w-[60%] min-w-[330px] min-h-[330px]  object-contain"
+          className="xl:h-[70%] xl:w-[70%] min-w-[330px] min-h-[330px] object-contain"
         />
       </div>
       {/* //==================================================== */}
       <div className="flex flex-1 min-h-full flex-col justify-center md:py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <h2 className="md:mt-10  text-end text-xl font-bold leading-9 tracking-tight text-gray-700">
+          <h2 className="md:mt-10 text-end text-2xl font-bold leading-9 tracking-tight text-gray-700">
             انشاء حساب كطبيب
           </h2>
         </div>

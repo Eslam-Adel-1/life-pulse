@@ -13,7 +13,7 @@ const Page = () => {
             </h2>
           </div>
 
-          <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+          <div className="mt-10 sm:mx-auto sm:w-full xl:w-[85%]">
             <form className="space-y-6" action="">
               <div>
                 <label
@@ -64,7 +64,7 @@ const Page = () => {
           alt="login-image"
           width={370}
           height={370}
-          className=""
+          className="xl:h-[70%] xl:w-[70%] min-w-[330px] min-h-[330px]  object-contain"
         />
       </div>
     </main>

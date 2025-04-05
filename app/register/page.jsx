@@ -11,9 +11,9 @@ const Page = () => {
           <Image
             src={login_image1}
             alt="login-image"
-            width={500}
-            height={500}
-            className=" xl:h-[60%] xl:w-[60%] min-w-[330px] min-h-[330px]  object-contain"
+            width={310}
+            height={310}
+            className="xl:h-[60%] xl:w-[60%] min-w-[330px] min-h-[330px]  object-contain"
             priority
           />
         </div>
